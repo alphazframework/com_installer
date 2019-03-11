@@ -31,7 +31,7 @@ class Home extends \Zest\Controller\Controller
 
     public function setup()
     {
-        View::rander(__COM_INSTALLER__.'Home/setup');
+        View::rander(__COM_INSTALLER__.'Home/setup.php');
     }
 
     public function setupProcess()
