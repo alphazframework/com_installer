@@ -122,7 +122,7 @@ class Home extends \Zest\Controller\Controller
     {
         if (input('submit')) {
             $files = new Files();
-            $status = $files->fileUpload($_FILES['file'], route()->storage_data, 'zip');
+            $status = $files->fileUpload($_FILES['file'], route('storage.data'), 'zip');
             if ($status['status'] === 'success') {
                 $ret = $this->init()->install($status['code'], $status['name']);
                 if ($ret)
