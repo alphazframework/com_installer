@@ -38,7 +38,7 @@ class Com extends Components
         $file = new FileHandling();
         $userFile = route('storage.data').md5($usr).'.json';
         if (!file_exists($userFile)) {
-                
+            $file->open($userFile, 'writeOnly')->write($json);
             $file->open(route('storage.data').md5('com_installer').'.json','writeOnly')->write('installed');
             $file->close();
             return true;
