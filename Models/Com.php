@@ -26,7 +26,7 @@ class Com extends Components
 
     public function isInstalled()
     {
-        return file_exists(route()->storage_data.md5('com_installer').'.json') ? true : false;
+        return file_exists(route('storage.data').md5('com_installer').'.json') ? true : false;
     }
 
     public function register($usr,$pwd)
@@ -36,10 +36,10 @@ class Com extends Components
         $user['password'] = Hash::make($pwd);
         $json = json_encode($user);
         $file = new FileHandling();
-        $userFile = route()->storage_data.md5($usr).'.json';
+        $userFile = route('storage.data').md5($usr).'.json';
         if (!file_exists($userFile)) {
-            $file->open($userFile, 'writeOnly')->write($json);
-            $file->open(route()->storage_data.md5('com_installer').'.json','writeOnly')->write('installed');
+                
+            $file->open(route('storage.data').md5('com_installer').'.json','writeOnly')->write('installed');
             $file->close();
             return true;
         }
@@ -49,7 +49,7 @@ class Com extends Components
     public function login($usr, $pwd)
     {
         $file = new FileHandling();
-        $userFile = route()->storage_data.md5($usr).'.json';
+        $userFile = route('storage.data').md5($usr).'.json';
         if (file_exists($userFile)) {
             $auth = $file->open($userFile, 'readOnly')->read();
             $auth = json_decode($auth, true);
