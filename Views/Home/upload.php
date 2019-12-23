@@ -12,10 +12,10 @@
 		  <div class="form-group">
 		   <input type="submit" name="submit" class="btn btn-primary" value="<?=printl("upload:btn:com:installer");?>">
 		  </div>
-		</form>		
+		</form>
 					<div class="form-group">
-				<span class="alert alert-info"><?=printl('upload:msg:com:installer')?></span>	
-			</div>	
+				<span class="alert alert-info"><?=printl('upload:msg:com:installer')?></span>
+			</div>
 	</div>
 </body>
 </html>

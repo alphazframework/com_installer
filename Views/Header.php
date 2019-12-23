@@ -33,14 +33,14 @@
         <a class="nav-link" href="<?=site_base_url();?>/com/installer/logout"><?=printl('signout:btn:com:installer')?></a>
         <?php } else { ?>
           <a class="nav-link" href="<?=site_base_url();?>/com/installer/login"><?=printl('login:btn:com:installer')?></a>
-        <?php } ?>  
-      </li> 
+        <?php } ?>
+      </li>
     </ul>
-  </div> 
+  </div>
 </nav>
 <br/>
-       <?php 
+       <?php
          $msg = view_system_message();
              echo $msg;
-              
-        ?>	
+
+        ?>

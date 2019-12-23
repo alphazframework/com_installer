@@ -23,7 +23,7 @@
           <i class="fa fa-check close green"></i>
         <?php } else { ?>
           <i class="fa fa-times close red"></i>
-        <?php } ?> 
+        <?php } ?>
         <?=$c['name']?>
       </a>
     </div>
@@ -42,7 +42,7 @@
  			 	<tr>
     				<th scope="row"><?=printl("author:url:com:installer");?></th>
     				<td><a target="_blank" href="<?=$c['author']['homepage']?>"><?=$c['author']['homepage']?>/</a></td>
- 			 	</tr>  
+ 			 	</tr>
  			 	<tr>
     				<th scope="row"><?=printl("license:com:installer");?></th>
     				<td><a target="_blank" href="<?=$c['license']['url']?>"><?=$c['license']['license']?></a></td>
@@ -56,7 +56,7 @@
                             	<th><?=printl("version:com:installer");?></th>
                                 <th><?=printl('availability:com:installer')?></th>
                             </tr>
-                                                        
+
                             	<tr>
                             		<td><?=printl('z:version:com:installer')?></td>
                                 	<td><?=$c['requires']['version']?></td>
@@ -64,7 +64,7 @@
                             	</tr>
                      </table>
                     </td>
- 			 	</tr>                                          
+ 			 	</tr>
 			</table>
         <?php if (strtolower($c['id']) !== 'com_installer'): ?>
 			  <a id='delete-<?=$c['id']?>' href="<?=site_base_url();?>/com/installer/delete?name=<?=$c['id']?>" class="btn btn-danger"><?=printl('delete:btn:com:installer')?></a><script type="text/javascript">
@@ -88,6 +88,6 @@
 
   </div>
 <?php endforeach; ?>
-</div>	
+</div>
 </body>
 </html>

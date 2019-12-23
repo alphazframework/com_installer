@@ -13,7 +13,7 @@
 		  <div class="form-group">
 		   <input type="submit" name="submit" class="btn btn-primary" value="<?=printl("setup:btn:com:installer");?>">
 		  </div>
-		</form>		
+		</form>
 	</div>
 </body>
 </html>

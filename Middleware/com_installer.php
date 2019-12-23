@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Components\com_installer\Middleware;
 
 class com_installer
@@ -9,11 +8,11 @@ class com_installer
 		if (!(new \App\Components\com_installer\Models\Com())->isInstalled()) {
             redirect(site_base_url().'/com/installer/setup');
         }
-        
+
 	}
 
 	public function after($request, $response, $params)
 	{
-		
+
 	}
 }
