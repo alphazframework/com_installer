@@ -1,5 +1,4 @@
 <?php
-
 /**
  * This file is part of the Zest Framework.
  *
@@ -80,5 +79,5 @@ class Com extends Components
         }
 
         return $icon;
-    }    
+    }
 }

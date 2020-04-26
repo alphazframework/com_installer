@@ -1,12 +1,11 @@
 <?php
-
 namespace App\Components\com_installer\Controllers;
 
 use Zest\Component\View\View;
 use Zest\Data\Conversion;
 use Zest\Files\Files;
 
-define("__COM_INSTALLER__", 'com_installer/Views/');
+define('__COM_INSTALLER__', 'com_installer/Views/');
 
 class Home extends \Zest\Controller\Controller
 {
@@ -103,7 +102,7 @@ class Home extends \Zest\Controller\Controller
                 add_system_message(printl('auth:error:com:installer'), 'error');
             }
             redirect(site_base_url().'/com/installer/index');
-        } 
+        }
     }
     public function logout()
     {
@@ -127,7 +126,7 @@ class Home extends \Zest\Controller\Controller
                 $ret = $this->init()->install($status['code'], $status['name']);
                 if ($ret)
                     add_system_message(printl('success:com:installer'), 'success');
-                else 
+                else
                     add_system_message(printl('error:n:com:installer'), 'error');
             } else {
                 add_system_message(printl('error:file:com:installer'), 'error');

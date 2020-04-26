@@ -1,7 +1,7 @@
 {
     "name": "Component Installer",
     "id": "com_installer",
-    "description": "Allow user to manipulate component",
+    "description": "Allows users to manipulate components in an efficient way.",
     "version": "1.0.0",
     "status": true,
     "author": {

@@ -1,5 +1,5 @@
 <?php
- return [
+return [
     'login:title:com:installer' => 'Login to manipulate components',
     'setup:title:com:installer' => 'Setup component',
     'username:com:installer'    => 'Username',
@@ -28,13 +28,13 @@
     'installer:com:installer'    => 'Component Installer',
     'success:login:com:installer'=> 'Account logout successfully',
     'success:com:installer'      => 'Component installed successfully',
-    'error:n:com:installer'      => 'Sorry, Component can not installed!',
-    'error:file:com:installer'   => 'Sorry, Component file cant uploaded!',
-    'auth:error:com:installer'   => 'Username or password wrong.',
-    'auth:success:com:installer' => 'You\'re login successfully',
-    'enable:msg:com:installer'   => 'Component enable successfully',
-    'disable:msg:com:installer'  => 'Component disable successfully',
-    'enable:msg:n:com:installer' => 'Sorry, this component can not be enable.',
-    'disable:msg:n:com:installer'=> 'Sorry, this component can not be disable.',  
-    'delete:msg:com:installer'   => 'Component delete successfully, but the database/files this component created is not deleted.',
- ];
+    'error:n:com:installer'      => 'Sorry, component can\'t be installed!',
+    'error:file:com:installer'   => 'Sorry, component file can\'t be uploaded!',
+    'auth:error:com:installer'   => 'Username or password is wrong.',
+    'auth:success:com:installer' => 'You\'ve logged in successfully',
+    'enable:msg:com:installer'   => 'Component enabled successfully',
+    'disable:msg:com:installer'  => 'Component disabled successfully',
+    'enable:msg:n:com:installer' => 'Sorry, this component can\'t be enabled.',
+    'disable:msg:n:com:installer'=> 'Sorry, this component can\'t be disabled.',
+    'delete:msg:com:installer'   => 'Component deleted successfully, but the database/files this component created were not deleted.',
+];
