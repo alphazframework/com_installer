@@ -81,7 +81,7 @@ class Home extends \Zest\Controller\Controller
     public function all()
     {
         $this->isLogin();
-        View::rander(__COM_INSTALLER__.'Home/all',Conversion::objectArray($this->init()->getAll()));
+        View::rander(__COM_INSTALLER__.'Home/all',Conversion::objectToArray($this->init()->getAll()));
     }
 
     public function login()
